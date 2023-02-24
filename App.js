@@ -1,11 +1,20 @@
+import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { Routes } from './src/routes';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 export default function App() {
   return (
-    <View>
-      <Text>Open up App.js to start working on your app!</Text>
+    <React.Fragment>
       <StatusBar style="auto" />
-    </View>
+      <NavigationContainer>
+        <QueryClientProvider client={queryClient}>
+          <Routes />
+        </QueryClientProvider>
+      </NavigationContainer>
+    </React.Fragment>
   );
 }
