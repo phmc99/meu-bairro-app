@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/Home';
 import Logo from '../../assets/header-logo.png';
-import { Image, StyleSheet } from 'react-native';
+import { Image } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 export const Routes = () => {

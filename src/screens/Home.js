@@ -1,9 +1,10 @@
-import { Text, View, SafeAreaView } from 'react-native';
+import { Text, SafeAreaView } from 'react-native';
+import AppCarousel from '../components/AppCarousel';
 
 export default function Home() {
   return (
     <SafeAreaView>
-      <Text>Olá, Mundo!</Text>
+      <AppCarousel />
     </SafeAreaView>
   );
 }
