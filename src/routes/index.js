@@ -14,7 +14,11 @@ export const Routes = () => {
       <Stack.Screen
         name="Home"
         component={Home}
-        options={{ headerTitle: headerImage, headerTitleAlign: 'center' }}
+        options={{
+          headerTitle: headerImage,
+          headerTitleAlign: 'center',
+          navigationBarColor: '#f3f3f3'
+        }}
       />
     </Stack.Navigator>
   );
