@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeButtonContainer = styled.View`
+export const HomeButtonContainer = styled.TouchableOpacity `
   width: 90%;
   max-width: 420;
   height: 50;

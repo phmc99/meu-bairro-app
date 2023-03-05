@@ -1,6 +1,6 @@
 import { HomeButtonContainer, HomeButtonText } from './style';
 
-const HomeButton = ({children, rest}) => {
+const HomeButton = ({children, ...rest}) => {
   return (
     <HomeButtonContainer {...rest}>
       <HomeButtonText>{children}</HomeButtonText>
