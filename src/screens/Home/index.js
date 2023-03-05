@@ -1,15 +1,16 @@
-import { Text, SafeAreaView } from 'react-native';
 import AppCarousel from '../../components/AppCarousel';
 import HomeButton from '../../components/HomeButton';
-import { HomeContainer } from './style';
+import { HomeButtonList, HomeContainer } from './style';
 
 export default function Home() {
   return (
     <HomeContainer>
       <AppCarousel />
-      <HomeButton />
-      <HomeButton />
-      <HomeButton />
+      <HomeButtonList>
+        <HomeButton>📍 Mais próximos</HomeButton>
+        <HomeButton>🆕 Novos comércios</HomeButton>
+        <HomeButton>⭐️ Melhores avaliações</HomeButton>
+      </HomeButtonList>
     </HomeContainer>
   );
 }

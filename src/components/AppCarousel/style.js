@@ -7,11 +7,13 @@ export const CarouselContainer = styled.SafeAreaView`
 export const CarouselView = styled.View`
   width: ${props => props.width};
   height: ${props => props.height * 0.5};
+  max-height: 95%;
 `;
 
 export const CarouselScrollView = styled.ScrollView`
   width: ${props => props.width};
   height: ${props => props.height * 0.5};
+
 `;
 
 export const DotView = styled.View`

@@ -1,10 +1,9 @@
-import { View, Text } from 'react-native';
-import { HomeButtonContainer } from './style';
+import { HomeButtonContainer, HomeButtonText } from './style';
 
-const HomeButton = () => {
+const HomeButton = ({children, rest}) => {
   return (
-    <HomeButtonContainer>
-      <Text>HomeButton</Text>
+    <HomeButtonContainer {...rest}>
+      <HomeButtonText>{children}</HomeButtonText>
     </HomeButtonContainer>
   );
 };
